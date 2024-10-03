@@ -8,7 +8,7 @@
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <style>
+    <style> 
         html {
             background-color: black;
         }
@@ -41,7 +41,7 @@
 
         #info h1 {
             color: white;
-            letter-spacing: 3px;
+            letter-spacing: 2.5px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
@@ -58,6 +58,32 @@
             padding: 16px 32px;
             border-radius: 8px;
         }
+        .timer-container {
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            position: relative 
+        }
+        #text1 {
+            padding:4px;
+            z-index: 1000;
+            position: absolute;
+            font-size: 0,5em;
+            color: white;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+ 
+        #timer {
+            position:absolute;
+            padding:4px;
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+            font-family:'Courier New', Courier, monospace;
+
+        }
     </style>
     <script>
 
@@ -73,9 +99,14 @@
             <div id="info">
                 <p>Autor: Lorem</p>
                 <h1>Film name</h1>
+                <div class="timer-container">
+                    <span id="text1">Container</span> 
+                    <span id="timer">59 : 59 : 59</span>
+                </div>
                 <button>
                     <eye style="color:#A259FF">👁</eye> Ver mas informacion
                 </button>
+                
             </div>
         </div>
     </main>
