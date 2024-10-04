@@ -62,21 +62,19 @@
             background-color: rgba(0, 0, 0, 0.5); 
             padding: 10px;
             border-radius: 5px;
-            margin-top: 10px;
-            position: relative 
-        }
-        #text1 {
-            padding:4px;
-            z-index: 1000;
-            position: absolute;
-            font-size: 0,5em;
-            color: white;
-            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top:  10px;
+            margin-left: 380px; 
         }
 
- 
+        #duration {
+            font-family: Space Mono;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 13.2px;
+            text-align: left;
+
+        }
         #timer {
-            position:absolute;
             padding:4px;
             font-size: 2em;
             font-weight: bold;
@@ -100,7 +98,7 @@
                 <p>Autor: Lorem</p>
                 <h1>Film name</h1>
                 <div class="timer-container">
-                    <span id="text1">Container</span> 
+                    <p id="duration">Duracion</p>
                     <span id="timer">59 : 59 : 59</span>
                 </div>
                 <button>
